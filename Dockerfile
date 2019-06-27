@@ -1,8 +1,9 @@
-
 FROM python:3.7
 
 # Set the timezone to KST
 RUN cat /usr/share/zoneinfo/Asia/Seoul > /etc/localtime
+
+
 
 RUN set -ex \
     && apt-get clean && apt-get update \
